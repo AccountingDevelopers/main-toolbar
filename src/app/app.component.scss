@@ -1,0 +1,39 @@
+.toolbar {
+    background: #f5f5f5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.toolbar__part {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    ::ng-deep {
+        .pi {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.toolbar__user-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.toolbar--user-name {
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 5px;
+    transition: background 0.3s;
+
+    &:hover {
+        background: #e0e0e0;
+        border-radius: 5px;
+    }
+}
